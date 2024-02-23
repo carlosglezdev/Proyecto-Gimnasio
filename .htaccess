@@ -1,0 +1,8 @@
+Options All -Indexes
+
+RewriteEngine On
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 [L]
+
+RewriteRule ^([-a-zA-Z0-9]+)&pagina([0-9]+)$ index.php?ruta=$1&pagina=$2 [L]
+RewriteRule ^([-a-zA-Z0-9]+)&tipo([0-9]+)$ index.php?ruta=$1&tipo=$2 [L]
+RewriteRule ^([-a-zA-Z0-9]+)&pagina([0-9]+)&tipo([0-9]+)$ index.php?ruta=$1&pagina=$2&tipo=$3 [L]
